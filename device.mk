@@ -14,12 +14,12 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/a51
+DEVICE_PATH := device/samsung/a50s
 
 # Inherit common device configuration
-$(call inherit-product, device/samsung/universal9611-common/common.mk)
-# Inherit A51 blobs
-$(call inherit-product, vendor/samsung/a51/a51-vendor.mk)
+$(call inherit-product, device/samsung/exynos9611-common/common.mk)
+# Inherit A50S blobs
+$(call inherit-product, vendor/samsung/a50s/a50s-vendor.mk)
 
 # Inherit dalvik heap configs for 4GB device
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)

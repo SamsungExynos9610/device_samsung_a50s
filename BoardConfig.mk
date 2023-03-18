@@ -14,18 +14,18 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/a51
+DEVICE_PATH := device/samsung/a50s
 
 # Inherit from the common tree
-include device/samsung/universal9611-common/BoardConfigCommon.mk
+include device/samsung/exynos9611-common/BoardConfigCommon.mk
 # Inherit optional vendor BoardConfig
--include vendor/samsung/a51/BoardConfigVendor.mk
+-include vendor/samsung/a50s/BoardConfigVendor.mk
 
 # OTA Asserts
-TARGET_OTA_ASSERT_DEVICE := a51,a51dd,a51nsxx
+TARGET_OTA_ASSERT_DEVICE := a50s
 
 # Kernel config
-TARGET_KERNEL_CONFIG := vendor/a51-aosp_defconfig
+TARGET_KERNEL_CONFIG := vendor/a50s-aosp_defconfig
 
 ## Partitions Sizes
 BOARD_BOOTIMAGE_PARTITION_SIZE := 61865984

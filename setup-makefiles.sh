@@ -8,8 +8,8 @@
 
 set -e
 
-export DEVICE=a51
-export DEVICE_COMMON=universal9611-common
+export DEVICE=a50s
+export DEVICE_COMMON=exynos9611-common
 export VENDOR=samsung
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
